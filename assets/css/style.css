@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+header {
+  font-family: "Pacifico", serif;
+  font-size: 235%;
+  padding: 8px;
+  text-align: center;
+}
+
+header nav {
+  padding-top: 10px;
+  margin-right: 10px;
+  float: center;
+  font-family: Readex Pro;
+  font-size: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 15px;
+}
+
+/* classes in alpha order */
+.bgc-cornflowerblue {
+  background-color: cornflowerblue;
+}
+
+.bgc-lightgray {
+  background-color: lightgray;
+}
+
+.box {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Readex Pro", serif;
+  background-color: cornflowerblue;
+  color: black;
+}
+
+.c-black {
+  color: black;
+}
+
+.d-f {
+  display: flex;
+}
+
+.ffrp {
+  font-family: "Readex Pro";
+}
+
+.fz-2 {
+  font-size: 2rem;
+}
+
+.h300 {
+  height: 300;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.mt {
+  margin-top: 1.5rem;
+}
+
+.p {
+  padding: 1.5rem;
+}
+
+.p22 {
+  padding: 22px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* media query */
+@media (min-width: 768px) {
+  .d-f\@lrg {
+    display: flex;
+  }
+
+  .fg-1\@lrg {
+    flex-grow: 1;
+  }
+
+  .fg-4\@lrg {
+    flex-grow: 4;
+  }
+
+  .ml\@lrg {
+    margin-left: 1.5rem;
+  }
+}
