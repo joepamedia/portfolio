@@ -58,6 +58,13 @@ header nav ul li {
   color: black;
 }
 
+.flex-item {
+  background-color: cornflowerblue;
+  width: 75%;
+  padding: 10px;
+  flex: 2;
+}
+
 .d-f {
   display: flex;
 }
@@ -66,12 +73,60 @@ header nav ul li {
   font-family: "Readex Pro";
 }
 
+.fg-1 {
+  flex-grow: 1;
+}
+
+.fs-1 {
+  flex-shrink: 1;
+}
+
+.fx-1 {
+  flex: 1;
+}
+
+.flex-container {
+  display: flex;
+  background-color: cornflowerblue;
+}
+
+.flo-r {
+  float: right;
+}
+
+.fw {
+  flex-wrap: wrap-reverse;
+}
+
 .fz-2 {
   font-size: 2rem;
 }
 
+.fz-22 {
+  font-size: 22px;
+}
+
+.h-a {
+  height: auto;
+}
+
 .h300 {
   height: 300;
+}
+
+.iframe {
+  height: 300px;
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sa {
+  justify-content: space-around;
 }
 
 .mb {
@@ -90,8 +145,22 @@ header nav ul li {
   padding: 22px;
 }
 
+.w-25 {
+  width: 25%;
+}
+
 .w-100 {
   width: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.frame {
+  flex: 1 0 0;
 }
 
 /* media query */
