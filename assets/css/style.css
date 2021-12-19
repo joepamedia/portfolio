@@ -1,9 +1,13 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
-
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 a {
   text-decoration: none;
 }
@@ -37,21 +41,16 @@ header nav ul li {
 }
 
 /* classes in alpha order */
+.ai-c {
+  align-items: center;
+}
+
 .bgc-cornflowerblue {
   background-color: cornflowerblue;
 }
 
 .bgc-lightgray {
   background-color: lightgray;
-}
-
-.box {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Readex Pro", serif;
-  background-color: cornflowerblue;
-  color: black;
 }
 
 .c-black {
@@ -73,6 +72,10 @@ header nav ul li {
   font-family: "Readex Pro";
 }
 
+.fl-l {
+  float: left;
+}
+
 .fg-1 {
   flex-grow: 1;
 }
@@ -85,6 +88,10 @@ header nav ul li {
   flex: 1;
 }
 
+.fx-11 {
+  flex: 1 1 1;
+}
+
 .flex-container {
   display: flex;
   background-color: cornflowerblue;
@@ -95,7 +102,11 @@ header nav ul li {
 }
 
 .fw {
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+}
+
+.fxd-c {
+  flex-direction: column;
 }
 
 .fz-2 {
@@ -106,19 +117,20 @@ header nav ul li {
   font-size: 22px;
 }
 
+.g {
+  gap: 1.5rem;
+}
+
 .h-a {
   height: auto;
 }
 
-.h300 {
-  height: 300;
+.h-100vh {
+  height: 100vh;
 }
 
-.iframe {
-  height: 300px;
-  width: 300px;
-  resize: both;
-  overflow: auto;
+.h300 {
+  height: 300;
 }
 
 .jc-c {
@@ -129,12 +141,28 @@ header nav ul li {
   justify-content: space-around;
 }
 
+.m {
+  margin: auto;
+}
+
 .mb {
   margin-bottom: 20px;
 }
 
+.ml {
+  margin-left: 130px;
+}
+
 .mt {
   margin-top: 1.5rem;
+}
+
+.mw-60 {
+  max-width: 60rem;
+}
+
+.ovf {
+  overflow: hidden;
 }
 
 .p {
@@ -145,8 +173,8 @@ header nav ul li {
   padding: 22px;
 }
 
-.w-25 {
-  width: 25%;
+.ta-c {
+  text-align: center;
 }
 
 .w-100 {
@@ -157,10 +185,6 @@ header nav ul li {
   display: flex;
   flex-direction: column;
   min-height: 0;
-}
-
-.frame {
-  flex: 1 0 0;
 }
 
 /* media query */
