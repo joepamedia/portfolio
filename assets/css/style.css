@@ -1,3 +1,4 @@
+/* element selectors*/
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -13,6 +14,7 @@ a {
 
 body {
   background-color: lightgrey;
+  max-width: 60rem;
 }
 
 header {
@@ -39,9 +41,26 @@ header nav ul li {
   margin: 15px;
 }
 
+main {
+  padding: 1.5rem;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 /* classes in alpha order */
 .ai-c {
   align-items: center;
+}
+
+.box {
+  margin-bottom: 20px;
+  padding: 22px;
+  font-family: "Readex Pro";
+  background-color: cornflowerblue;
+  position: relative;
+  color: black;
 }
 
 .bgc-cornflowerblue {
@@ -77,6 +96,14 @@ header nav ul li {
 
 .fg-1 {
   flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 1.5rem;
+  font-family: "Readex Pro";
 }
 
 .fs-1 {
@@ -136,6 +163,13 @@ header nav ul li {
   height: 300;
 }
 
+.img {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  align-items: center;
+}
+
 .jc-c {
   justify-content: center;
 }
@@ -168,6 +202,13 @@ header nav ul li {
   max-width: 100%;
 }
 
+.column-style {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .ovf {
   overflow: hidden;
 }
@@ -182,6 +223,14 @@ header nav ul li {
 
 .pos-r {
   position: relative;
+}
+
+.style {
+  margin: auto;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .ta-c {
@@ -203,37 +252,16 @@ header nav ul li {
 }
 
 /* media query */
-@media only screen and (max-width: 939px) {
-  .fx {
-    flex: 1 1 0;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .miw-100\@sml {
-    min-width: 100%;
+  .box {
+    max-width: 50%;
+    margin: 10px;
+    padding: 1.5rem;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .miw-50\@lrg {
-    min-width: 50%;
+@media screen and (max-width: 481px) {
+  .style {
+    display: block;
   }
-}
-
-@media (min-width: 576px) {
-  .d-f\@lrg {
-    display: flex;
-  }
-
-  .fg-1\@lrg {
-    flex-grow: 1;
-  }
-}
-.fg-4\@lrg {
-  flex-grow: 4;
-}
-
-.ml\@lrg {
-  margin-left: 1.5rem;
 }
