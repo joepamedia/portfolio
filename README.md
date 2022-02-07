@@ -4,4 +4,5 @@ This is my personal portfolio that will display my photography, videography, and
 
 # Links
 Repo: https://github.com/joepamedia/portfolio
+
 Page: https://joepamedia.github.io/portfolio/
