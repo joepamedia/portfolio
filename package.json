@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio that will display my photography, videography, and code. When the page loads, the user is presented with a navbar they can interact with that will take them to sections of my website. The user can also scroll down to navigate the site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joepamedia/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joepamedia/portfolio/issues"
+  },
+  "homepage": "https://github.com/joepamedia/portfolio#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2"
+  },
+  "type": "module"
+}

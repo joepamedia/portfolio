@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.8/dist/css/splide-extension-video.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Readex Pro" />
     <title>Joe Pa Media</title>
@@ -17,12 +19,15 @@
         <div id="toggle">
           <i class="indicator"></i>
         </div>
-        <ul class="fz-30">
+        <ul class="fz-29">
           <li>
             <a class="c-black" href="#home">Home</a>
           </li>
           <li>
             <a class="c-black" href="#about">About Me</a>
+          </li>
+          <li>
+            <a class="c-black" href="#coding">Coding</a>
           </li>
           <li>
             <a class="c-black" href="#videos">Videos</a>
@@ -37,7 +42,7 @@
       </nav>
     </header>
     <div class="mw-60">
-      <img class="w-100" src="assets/images/DoubleExposurePalmisano_Joe.jpg" alt="hero-image" />
+      <img class="w-100" src="./assets/images/DoubleExposurePalmisano_Joe lowres.jpg" alt="hero-image" />
     </div>
 
     <main>
@@ -55,6 +60,31 @@
         </section>
 
         <!--section 2-->
+        <!-- coding -->
+        <div class="column-style">
+          <section id="coding" class="box">
+            <div class="flex-item">
+              <h2 class="fz-2 ta-c fs-1">Coding</h2>
+              <p class="fz-22 fw ta-c">In the summer of 2021, I began to explore the realm of web development, which led me to taking the Northwestern University Full Stack Flex Coding Bootcamp. In just two months, we have learned the basics of Javascript, CSS, and HTML. Currently, we are learning about Node JS! Check out a few pages I have made so far! Click the project title to view the GitHub Repository or click the gif to see the site!</p>
+            </div>
+          <div class="ta-c">
+            <div class="fl-l ta-c">
+              <a href="https://github.com/The-camelCasers/project" target="_blank">
+                <h3>Do You Need An Umbrella?</h3>
+              
+            <a href="https://the-camelcasers.github.io/project/" target="_blank">
+              <img class="img-lg" src="./assets/images/DoYouNeedanUmbrella.gif" alt="project-gif" />
+              
+            </a>
+            <a href="https://github.com/joepamedia/weather-dashboard" target="_blank">
+              <h3>Weather Dashboard</h3>
+            <a href="https://joepamedia.github.io/weather-dashboard/" target="_blank">
+              <img class="img-lg" src="./assets/images/weatherdashboard.gif" alt="project-gif" />
+            </a>
+          </div>
+          </div>
+          </section>
+          <!-- section 3 -->
         <!-- video gallery -->
         <section id="videos" class="box">
           <div class="flex-item">
@@ -62,27 +92,40 @@
             <p class="fz-22 ta-c">This will be a collection of videos that I created. The video player is playing my latest project that I made for a client.</p>
           </div>
           <div class="d-f w-100 jc-c ai-c fx-11">
-            <iframe width="848" height="477" src="https://www.youtube.com/embed/PqvTlPPd8Zg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/JHlhM7nTsNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </section>
-        <!--section 3-->
+        <!--section 4-->
         <!-- photo gallery -->
         <section id="photos" class="box">
           <div class="flex-item">
             <h2 class="fz-2 ta-c">Photos</h2>
-            <p class="fz-22 ta-c">This will be a collection of photos that I have taken over a ten year span. The highlighted image is Niagara Falls on Canadian Independence Day</p>
+            <p class="fz-22 ta-c">This is a brief collection of photos that I have taken over a ten year span. Click the arrows to see a new picture!</p>
           </div>
-          <div class="fx-1">
-            <img class="img" src="./assets/images/Niagara Falls,Fireworks, NY.jpg" alt="niagara falls" />
+          <div id="splide2" class="splide">
+            <div class="splide__track ">
+              <ul class="splide__list">
+                <li class="splide__slide">Niagara Falls on Canadian Independence Day
+                  
+                  <img src="./assets/images/Niagara Falls,Fireworks, NY lowres.jpg" alt="Niagara-falls-img" class="w-100">
+                </li>
+                <li class="splide__slide">I-90 Time Exposure
+                  <img src="./assets/images/i90 time exposure lowres.jpg" alt="i90-img" class="w-100">
+                </li>
+                <li class="splide__slide">Sports photography
+                  <img src="./assets/images/Joes Soccer pic low res.jpg" alt="soccer-img" class="w-100">
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
-        <!--section 4-->
+        <!--section 5-->
         <!-- contact me -->
         <section id="contact" class="box">
           <div class="flex-item">
             <h2 class="fz-2 ta-c">Contact Me</h2>
-            <p class="fz-30 ta-c p">Click the LinkedIn and GitHub logos to find me there! Click the paper to view my resume!</p>
+            <p class="fz-30 ta-c p">Click the LinkedIn and GitHub logos to find me there! Click the paper to view my resume!<br>Or send me an email : josephpalmisano18@gmail.com</p>
             <div class="ta-c">
               <a href="https://linkedin.com/in/joseph-palmisano-jnp" target="_blank">
                 <img src="./assets/images/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" alt="linkedin-logo" class="img-sm" />
@@ -98,12 +141,21 @@
         </section>
       </div>
 
-      <script src="./script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.8/dist/js/splide-extension-video.min.js" ></script>
+
+     <script>
+      document.addEventListener( 'DOMContentLoaded', function() {
+         var splideTwo = new Splide( '#splide2' );
+splideTwo.mount();
+      } );
+    </script>
+      <script src="./index.js"></script>
     </main>
 
     <!--footer-->
     <footer class="footer">
-      <h3>Made with HTML, CSS, and Javascript</h3>
+      <h3>Made with HTML, CSS, and Javascript by Joe Palmisano</h3>
     </footer>
   </body>
 </html>
