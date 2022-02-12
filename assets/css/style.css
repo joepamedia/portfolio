@@ -68,6 +68,7 @@ main {
 }
 
 .box {
+  max-width: 100%;
   margin-bottom: 20px;
   padding: 22px;
   font-family: "Readex Pro";
@@ -206,8 +207,8 @@ main {
   padding: 1.5rem;
 }
 
-.img-lg {
-  width: 75%;
+.img-md {
+  width: 40%;
   padding: 1.5rem;
 }
 
