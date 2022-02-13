@@ -4,10 +4,10 @@
   margin: 0 auto;
 }
 *,
-/* *:before,
+*:before,
 *:after {
   box-sizing: inherit;
-} */
+}
 a {
   text-decoration: none;
 }
@@ -20,6 +20,10 @@ body {
 body.active {
   background-color: #282c34;
   color: lightgrey;
+}
+
+html {
+  display: flex;
 }
 
 h3 {
@@ -195,11 +199,7 @@ main {
 }
 
 .img {
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  align-items: center;
-  position: relative;
+  max-width: 100%;
 }
 
 .img-sm {
@@ -333,8 +333,11 @@ main {
 }
 /* media query */
 
-@media screen and (max-width: 605px) {
-}
+/* @media screen and (max-width: 604px) {
+  body {
+    display: flex;
+  }
+} */
 
 /* @media screen and (max-width: 650px) {
   .box {
