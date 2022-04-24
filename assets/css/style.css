@@ -65,6 +65,10 @@ main {
   align-items: center;
 }
 
+.align {
+  align-items: auto;
+}
+
 .box {
   margin-bottom: 20px;
   padding: 1rem;
@@ -98,16 +102,21 @@ main {
 
 .flex-item {
   background-color: cornflowerblue;
-
   flex: 2;
 }
 
 .d-f {
   display: flex;
 }
+.display-inline {
+  display: inline-flex;
+}
 
 .ffrp {
   font-family: "Readex Pro";
+}
+.ffp {
+  font-family: "Pacifico";
 }
 
 .fl-l {
@@ -203,6 +212,11 @@ main {
 
 .img-md {
   width: 40%;
+  padding: 1.5rem;
+}
+
+.img-gif {
+  width: 60%;
   padding: 1.5rem;
 }
 
@@ -310,6 +324,7 @@ main {
   flex-direction: column;
   min-height: 0;
 }
+
 /* ID's */
 /* toggle button for dark mode */
 #toggle {
